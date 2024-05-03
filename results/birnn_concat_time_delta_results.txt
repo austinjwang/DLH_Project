@@ -1,0 +1,12 @@
+
+
+Net variant: birnn_concat_time_delta
+Average Precision: 0.318 [nan,nan]
+AUROC: 0.718 [nan,nan]
+F1: 0.369 [nan,nan]
+PPV: 1.0 [nan,nan]
+NPV: 0.877 [nan,nan]
+Sensitivity: 0.637 [nan,nan]
+Specificity: 0.698 [nan,nan]
+Time: 236.483 [nan,nan] std: 0.0
+ Test Complete
