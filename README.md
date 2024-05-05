@@ -37,6 +37,21 @@ All code involved with preprocessing data sets, training, evaluating, and visual
 
 ## Trained Models
 Information about trained models are in the /logdir directory of this repository.  Each model except for the baseline logistic regression has a subdirectory which contains a final_model.pt file which represents the trained model parameters and an epoch_times.npz file which contains information about runtime duration when training the model.  The final_model.pt file is used when evaluating the model against bootstrap samples.
+Models trained are
+* RNN (concatenated Δtime)
+* RNN (concatenated Δtime) + Attention
+* Attention (concatenated time)
+* ODE + RNN + Attention
+* ODE + Attention
+* ODE + RNN    
+* RNN (exp time decay) + Attention
+* RNN (exp time decay)    
+* RNN (ODE time decay)   
+* RNN (ODE time decay) + Attention    
+* MCE + RNN + Attention
+* MCE + RNN
+* MCE + Attention
+* Logistic Regression
 
 ## Results
-Evaluation results for each model are in the /results directory of this repository.  Each pickle file is a small file used in the Jupyter notebook when loading all models to compare against the original paper's findings in a nicely formatted table.
+Evaluation results for each model are in the /results directory of this repository.  There is a pickle file for each model to capture the results that were collected for the full sample size. Each pickle file is used in the Jupyter notebook to display and compare against the original paper's findings in a nicely formatted table.
